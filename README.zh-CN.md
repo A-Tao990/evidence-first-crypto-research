@@ -8,6 +8,8 @@
 - `reports/NEGATIVE-RESULTS-ZH.md` / `NEGATIVE-RESULTS-EN.md`：文章（方法、结果表、我踩过的两个数据坑、总结）。
 - `scripts/btc_5m_reversal_test.py`：BTC 大 K 线之后会反转吗？样本外切分加置换检验，用币安公开行情。
 - `scripts/lp_replay_bnb_usdt.py`：回放集中流动性做市 vs 持有 vs 借贷利率，对"我的流动性有多集中"这个未知量做敏感性扫描，用 GeckoTerminal 公开 K 线。
+- `reports/BYBIT-BTC-PERP-REPLAY-ZH.md` / `-EN.md`：三组预先登记的 BTC 永续回放（通道突破、4 小时趋势、资金费反向），扣费后没有优势。只有报告和数字，代码暂未放入。
+- `vietnam-payments/BLUEPRINT-ZH.md` / `BLUEPRINT-EN.md`：一页蓝图，讲如何把加密放到越南本地支付通道（VietQR / MoMo / ZaloPay）之后，每条判断都标注是亲身观察、公开资料还是推断。
 
 ## 方法
 任何信号都要对照**随机基线**；用**前半段**定阈值、在**没见过的后半段**检验；做**置换检验**；把手续费、滑点、延迟当变量；并确保回放的数据源**和结算的数据源一致**。
