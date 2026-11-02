@@ -8,6 +8,8 @@ Built by John together with AI coding agents (Codex, Claude Code). I set goals, 
 - `reports/NEGATIVE-RESULTS-EN.md` / `reports/NEGATIVE-RESULTS-ZH.md` - the write-up: method, results table, two data traps I fell into, lessons.
 - `scripts/btc_5m_reversal_test.py` - does BTC reverse after a large 5-minute candle? Out-of-sample split + permutation test. Uses Binance public market data.
 - `scripts/lp_replay_bnb_usdt.py` - replay a concentrated-liquidity position vs hold vs a lending rate, sweeping the unknown "how concentrated is my liquidity" factor. Uses GeckoTerminal public candles.
+- `reports/BYBIT-BTC-PERP-REPLAY-EN.md` / `-ZH.md` - three pre-registered BTC perpetual replays (channel breakout, 4h trend, funding reversal): no edge after costs. Report and numbers only; code not included yet.
+- `vietnam-payments/BLUEPRINT-EN.md` / `BLUEPRINT-ZH.md` - a one-page blueprint for putting crypto behind Vietnam's local payment rails (VietQR / MoMo / ZaloPay), each claim labelled observed / reported / hypothesis.
 
 ## Method in one paragraph
 Always compare against a **random baseline** under the same exit rules; fix thresholds on the **first half**, test on the **unseen second half**; run a **permutation test**; treat fees/slippage/latency as **variables**; and make sure the replay data source **matches the settlement data source**.
